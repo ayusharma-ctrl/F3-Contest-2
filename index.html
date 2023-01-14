@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F3 Contest 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="upperDiv">
+        <span>Weather Api</span>
+        <button type="submit" id="fetchDataBtn">Fetch Data</button>
+        <div id="insideUpperDiv" style="display: none;">
+            <div id="insideUpperDiv1">
+                Latitude: <span id="spanLat"></span>
+            </div>
+            <div id="insideUpperDiv2">
+                Longitude: <span id="spanLong"></span>
+            </div>
+            <div id="map">
+                <iframe src="https://maps.google.com/maps?q=35.856737, 10.606619&z=15&output=embed" width="1320"
+                    height="400" frameborder="0" style="border:0"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <div id="lowerDiv" style="display: none;">
+        <span>Weather Data</span>
+        <div id="weatherData">
+            <div>Location: <span id="w1"> </span> </div>
+            <div>Lat: <span id="w2"> </span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Long: <span id="w10"> </span> </div>
+            <div>Timezone: <span id="w3"> </span> </div>
+            <div>Wind Speed: <span id="w4"> </span> </div>
+            <div>Pressure: <span id="w5"> </span> </div>
+            <div>Humidity: <span id="w6"> </span> </div>
+            <div>Wind Direction: <span id="w7"> </span> </div>
+            <div>UV Index: <span id="w8"> </span> </div>
+            <div>Feels Like: <span id="w9"> </span> </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
